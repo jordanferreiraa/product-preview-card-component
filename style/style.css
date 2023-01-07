@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Cream);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 600px;
+  height: 450px;
+  background-color: var(--White);
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 32px;
+}
+
+img[alt="product-desktop"] {
+  width: 300px
+}
+
+.parfum {
+  color: var(--Dark-grayish-blue);
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 23px;
+  color: var(--Dark-grayish-blue);
+  padding-bottom: 20px;
+}
+
+.prices {
+  display: flex;
+  gap: 19px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.price {
+  font-size: 32px;
+  color: var(--Dark-cyan);
+  font-family: 'Fraunces', serif;
+}
+
+.old-price {
+  font-size: 13px;
+  line-height: 23px;
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+button {
+  width: 236px;
+  height: 48px;
+  background-color: var(--Dark-cyan);
+  border: none;
+  border-radius: 8px;
+  color: var(--White);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11.61px;
+}
+
+button:hover {
+  background-color: var(--Very-dark-blue);
+  cursor: pointer;
+}
