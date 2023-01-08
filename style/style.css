@@ -36,13 +36,14 @@ body {
 }
 
 img[alt="product-desktop"] {
-  width: 300px
+  width: 300px;
 }
 
 .parfum {
   color: var(--Dark-grayish-blue);
   font-size: 12px;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -95,4 +96,51 @@ button {
 button:hover {
   background-color: var(--Very-dark-blue);
   cursor: pointer;
+}
+
+img[alt="product-mobile"] {
+  display: none;
+}
+
+@media (max-width: 500px) {
+
+  img[alt="product-desktop"] {
+    display: none;
+  }
+
+  img[alt="product-mobile"] {
+    display: block;
+    width: 343.7px;
+    /* height: 458px; *//* height: 458px; */
+  }
+
+  .container {
+    width: 343px;
+    height: 611px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .card {
+    height: 371px;
+    padding: 24px;
+  }
+
+  h1 {
+    line-height: 32px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+
+  .description {
+    padding-bottom: 24px;
+  }
+
 }
