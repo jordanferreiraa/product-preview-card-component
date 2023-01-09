@@ -91,11 +91,14 @@ button {
   align-items: center;
   justify-content: center;
   gap: 11.61px;
+
+  transition: .3s;
 }
 
 button:hover {
   background-color: var(--Very-dark-blue);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 img[alt="product-mobile"] {
